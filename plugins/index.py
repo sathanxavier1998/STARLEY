@@ -1,5 +1,6 @@
 import logging
 import asyncio
+from info import ADMINS
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
@@ -11,8 +12,6 @@ import re
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
-
-ADMINS = 1745047302
 
 @Client.on_callback_query(filters.regex(r'^index'))
 async def index_files(bot, query):
