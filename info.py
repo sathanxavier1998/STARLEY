@@ -43,8 +43,8 @@ class evamaria(Client):
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID','669072'))
-API_HASH = environ.get('API_HASH','None')
-BOT_TOKEN = environ.get('BOT_TOKEN','None')
+API_HASH = environ.get('API_HASH','3f6835286b03e000ab6d71b37cc35b92')
+BOT_TOKEN = environ.get('BOT_TOKEN','5510874505:AAFlN6GOFKJEFpK_CM7QbBSGAqcf7AFCzNo')
 
 # Bot settings
 CACHE_TIME = 300
@@ -60,8 +60,8 @@ MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/b26637d70f3630a7e
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', 'None').split()] 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', 'None').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1745047302').split()] 
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-10012345688 -10027378293 -10073837388 -1001765720202').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -74,10 +74,10 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = ("/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "None")
-DATABASE_NAME = environ.get('DATABASE_NAME', "None")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hyonjoo:hyonjoo@cluster0.lv6txrr.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "hyonjoo")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-MONGO_URL = os.environ.get('MONGO_URL', "None")
+MONGO_URL = os.environ.get('MONGO_URL', "mongodb+srv://hyonjoo:hyonjoo@cluster0.lv6txrr.mongodb.net/?retryWrites=true&w=majority")
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
