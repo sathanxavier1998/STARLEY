@@ -303,8 +303,8 @@ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢ�
     CUSTOM_FILE_CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : <code>{file_name}</code>
 
 ╔═════•✧❅✦❅✧•═════╗
-▣ <a href=https://t.me/cinemathattakam_Group>[CT™] 📽സിനിമ തട്ടകം​</a>
-▣ <a href=https://t.me/CT_Arena>[CT™] 📽സിനിമ തട്ടകം​</a>
+▣ <a href=https://t.me/+pfrDN32ZvVk4MDNl>​Cɪɴᴇᴍᴀ Vɪʟʟᴀ</a>
+▣ <a href=t.me/CV_Official>ᴄᴠ-ᴏꜰꜰɪᴄɪᴀʟ​</a>
 ╚═════•✧❅✦❅✧•═════╝</b>"""
 
     RESTART_TXT = """
@@ -349,9 +349,9 @@ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢ�
     OWNER_INFO = """
 <b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
     
-• ꜰᴜʟʟ ɴᴀᴍᴇ :『🔱』Dr.സാത്താൻ 🆇🄰🆅🄸🅴🅁 𝗞Ǥ𝗙 ​
-• ᴜꜱᴇʀɴᴀᴍᴇ : @Sathan_Of_Telegram
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/Sathan_Of_Telegram'>Dr.സാത്താൻ</a></b>"""
+• ꜰᴜʟʟ ɴᴀᴍᴇ : STΔRLΣΨ ⌬
+• ᴜꜱᴇʀɴᴀᴍᴇ : @Starley_TG
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/STrelizia_tG'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
     GROUP_INFO = """
 <b>⍟ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs Mᴏᴅᴜʟᴇ ⍟</b>
