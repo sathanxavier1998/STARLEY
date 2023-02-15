@@ -37,7 +37,7 @@ SPELL_CHECK = {}
 FILTER_MODE = {}
 
 pic = imdb.get('poster')
-            poster = pic.replace('.jpg', "._V1_UX360.jpg")
+poster = pic.replace('.jpg', "._V1_UX360.jpg")
 
 @Client.on_message(filters.command('autofilter') & filters.user(ADMINS))
 async def fil_mod(client, message): 
@@ -1247,7 +1247,7 @@ async def auto_filter(client, msg, spoll=False):
                     await message.delete()
         except Exception as e:
             logger.exception(e)
-            no_pic=await message.reply_photo(photo=pic, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            no_pic=await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(600)
@@ -1262,7 +1262,7 @@ async def auto_filter(client, msg, spoll=False):
                     await no_pic.delete()
                     await message.delete()
     else:
-        no_fil=await message.reply_photo(photo=pic, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        no_fil=await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(600)
