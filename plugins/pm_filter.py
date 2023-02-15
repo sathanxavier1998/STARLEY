@@ -1207,7 +1207,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"🎪 ᴛɪᴛɪʟᴇ {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/CT_Arena'>ᴄinemathattakam​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"
+        cap = f"🎪 ᴛɪᴛɪʟᴇ: {search}\n\n┏ 🤴 ᴀsᴋᴇᴅʙʏ : {message.from_user.mention}\n┣⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/{temp.U_NAME}'>ᴍᴀsᴛᴇʀ​</a>\n┗🍁 ᴄʜᴀɴɴᴇʟ : <a href='https://t.me/CV_offical'>ᴄᴠ ᴏꜰꜰɪᴄɪᴀʟ​</a>\n\nᴀꜰᴛᴇʀ 10 ᴍɪɴᴜᴛᴇꜱ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ\n\n★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : {message.chat.title}"
     if imdb and imdb.get('poster'):
         try:
             pic_fi=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -1244,7 +1244,7 @@ async def auto_filter(client, msg, spoll=False):
                     await message.delete()
         except Exception as e:
             logger.exception(e)
-            no_pic=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            no_pic=await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(600)
@@ -1259,7 +1259,7 @@ async def auto_filter(client, msg, spoll=False):
                     await no_pic.delete()
                     await message.delete()
     else:
-        no_fil=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        no_fil=await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(600)
