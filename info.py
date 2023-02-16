@@ -40,6 +40,8 @@ class evamaria(Client):
             sleep_threshold=60
         )
 
+imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
+
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '6620972'))
